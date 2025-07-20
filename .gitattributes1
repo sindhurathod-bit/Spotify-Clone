@@ -1,0 +1,37 @@
+# Ensure consistent line endings
+* text=auto
+
+# Treat all HTML, CSS, and JS as text
+*.html text
+*.css text
+*.js text
+
+# Treat images as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.webp binary
+
+# Normalize audio files (if any)
+*.mp3 binary
+*.wav binary
+
+# Prevent Git from messing up font files
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+# Force LF line endings for web files (optional, good for Linux/macOS)
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+
+# Handle markdown and readme
+*.md text
+
+# Set linguist language overrides (if needed)
+*.js linguist-language=JavaScript
+*.css linguist-language=CSS
+*.html linguist-language=HTML
