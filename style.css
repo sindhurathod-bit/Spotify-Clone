@@ -1,0 +1,269 @@
+body{
+    background-color: #020909;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 114px;
+    background-color: black;
+    align-items: center;
+}
+nav ul li{
+    color: aliceblue;
+    padding: 0 12px;
+}
+/* .container{
+    min-height: 72vh;
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    margin-bottom: 12px;
+    background-image: url('covers/spot.jpg');
+} */
+.container {
+    min-height: 70vh;
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    margin-bottom: 12px;
+    background-image: url('covers/icon3.jpg');
+    background-size: 200px  auto;      /* Makes the image smaller */
+    background-repeat: no-repeat;     /* Prevents tiling */
+    background-position: right bottom;/* Puts image in the corner */
+    /* Optionally, add transparency */
+    /* opacity does not work on background-image directly, use an overlay if needed */
+}
+.bottom{
+    position:fixed;
+    left: 0;
+    width: 100vw;
+    background-color:black;
+    color: azure;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60px;
+    z-index: 1000;
+    
+}
+#myProgressBar{
+    width: 100vw;
+    text-align: center;
+  margin-bottom:auto;
+  cursor: pointer;
+}
+
+.icons i{
+    cursor: pointer;
+    height: 100px;
+    color:white;
+    margin-top: 34px;
+}
+.songItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    max-width: 320px;
+    min-width: 180px;
+}
+
+.songItem img {
+    width: 80px;
+    height: 50px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.songItem span {
+    font-size: 0.95em;
+}
+
+.songlistplay i {
+    font-size: 1em;
+}
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+   cursor: pointer; 
+}
+.songinfo{
+    position:absolute;
+    left: 10vw;
+    font-family: sans-serif;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+
+}
+.songItem.active {
+    background-color: #d1ffe3;
+    border-left: 5px solid #1db954;
+}
+/* Sidebar Container */mo
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #040404;
+    color: #b3b3b3;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+/* Top Navbar */
+.top-navbar {
+    position: fixed;
+    top: 0;
+    left: 250px; /* to avoid overlapping with sidebar */
+    right: 0;
+    height: 60px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 10;
+    color: white;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #333;
+}
+
+/* User/Profile Section */
+.user-section .profile-btn {
+    background-color: #1DB954;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.profile-btn i {
+    margin-right: 8px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #040404;
+    color: #b3b3b3;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensures it's below main content if needed */
+    overflow-y: auto;
+}
+
+/* Logo */
+.logo img {
+    width: 140px;
+    margin-bottom: 30px;
+}
+
+/* Navigation */
+.nav-links, .playlists {
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-item i {
+    margin-right: 15px;
+    width: 20px;
+}
+
+.nav-item:hover {
+    color: #fff;
+}
+
+.nav-item.active {
+    color: #1DB954;
+    font-weight: bold;
+}
+
+/* Main content next to sidebar */
+  /* .main-content { */
+    /* margin-left: 250px; Leave space for sidebar */
+    /* padding: 30px;
+    color: white;
+    background-color: #121212;
+    min-height: 100vh; */ 
+.songlist h3{
+ margin-left: 100px;
+}
+.songitemcontainer {
+    margin-left: 270px; /* 250px for sidebar + 20px for spacing */
+    /* Optional: */
+    /* width: calc(100% - 270px); */
+    /* display: flex; */
+}

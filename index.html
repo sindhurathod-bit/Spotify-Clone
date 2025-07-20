@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - your favourite music is here</title>
+    <!-- Add this in your <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+</head>
+<body>
+    <nav>
+        
+    </nav><!-- Top Navbar -->
+<div class="top-navbar">
+    <div class="nav-buttons">
+        <button class="nav-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="nav-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    
+    <div class="user-section">
+        <button class="profile-btn">
+            <i class="fa-solid fa-user"></i>
+            <span>User</span>
+        </button>
+    </div>
+</div>
+
+    <div class="container">
+    
+        <div class="Songlist">
+              <h3>Best of NCS - No Copyright Sounds</h3>
+             <div class="main-content">
+                <div class="main-content">
+             </div> <div class="songitemcontainer">
+<div class="songItem">
+    <img src="covers/undiporadhey.jpeg" alt="1">
+    <span class="songName">Undiporadhey</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:35 
+            <i class="fa-solid fa-play songPlay" id="0"></i>
+        </span>
+    </span>
+</div>
+<div class="songItem">
+    <img src="covers/Arjun reddy.jpeg" alt="2">
+    <span class="songName">emitemitemito</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:35 
+            <i class="fa-solid fa-play songPlay" id="1"></i>
+        </span>
+    </span>
+</div>
+<div class="songItem">
+    <img src="covers/nani.jpeg" alt="3">
+    <span class="songName">ninnu chuse</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:35 
+            <i class="fa-solid fa-play songPlay" id="2"></i>
+        </span>
+    </span>
+</div>
+<div class="songItem">
+    <img src="covers/RX100.jpeg" alt="4">
+    <span class="songName">pilla raa</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:35 
+            <i class="fa-solid fa-play songPlay" id="3"></i>
+        </span>
+    </span>
+</div>
+<div class="songItem">
+    <img src="covers/vellipomaakey.jpeg" alt="5">
+    <span class="songName">vellipomaakey</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:35 
+            <i class="fa-solid fa-play songPlay" id="4"></i>
+    </span>
+    </span>
+</div>
+<div class="songItem">
+    <img src="covers/urike.jpeg" alt="6">
+    <span class="songName"> Urike Urike</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:35 
+            <i class="fa-solid fa-play songPlay" id="5"></i>
+        </span>
+    </span>
+</div>
+<div class="songItem">
+    <img src="covers/Arjun reddy.jpeg" alt="7">
+    <span class="songName">Bhekayali..</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:35 
+            <i class="fa-solid fa-play songPlay" id="6"></i>
+        </span>
+    </span>
+</div>
+<div class="songItem">
+    <img src="covers/jhol.jpeg" alt="8">
+    <span class="songName">jhol</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:35 
+            <i class="fa-solid fa-play songPlay" id="7"></i>
+        </span>
+    </span>
+</div>
+<div class="songItem">
+    <img src="covers/yftm.jpeg" alt="9">
+    <span class="songName">Yeh Fitoor Mera</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:35 
+            <i class="fa-solid fa-play songPlay" id="8"></i>
+        </span>
+    </span>
+</div>
+<div class="songItem">
+    <img src="covers/pehlidafa.jpg" alt="10">
+    <span class="songName">Pehli Dafa</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:35 
+            <i class="fa-solid fa-play songPlay" id="9"></i>
+        </span>
+    </span>
+</div>
+<div class="songItem">
+    <img src="covers/hit3.jpeg" alt="11">
+    <span class="songName">Prema velluva</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:35 
+            <i class="fa-solid fa-play songPlay" id="10"></i>
+        </span>
+    </span>
+</div>
+</div>
+          <div class="songBanner">
+  </div>  
+</div>
+    </div>
+    <div class="bottom">
+<input type="range" name="range" id="myProgressBar" min="0" max="100">
+<div class="icons">
+    <i class="fa-solid fa-backward-fast " id="previous"></i>
+    <i class="fa-solid fa-play" id="masterplay"></i>
+    <i class="fa-solid fa-forward-fast " id="next"></i>
+     </div>
+     <div class="songinfo">
+    <img src="spotify icon.jpeg" width="42px" alt="" id="gif">
+    <span id="currentSongName">Urike Urike - sid sriram</span>
+</div>
+<div class="time-display">
+    <span id="currentTime">0:00</span>/<span id="duration">0:00</span>
+</div>
+ </div> 
+ 
+<div class="sidebar">
+    <div class="logo">
+        <img src="imagespo.jpeg" alt="Spotify Logo">
+    </div>
+    <div class="nav-links">
+        <div class="nav-item active"><i class="fa-solid fa-house"></i> Home</div>
+        <div class="nav-item"><i class="fa-solid fa-magnifying-glass"></i> Search</div>
+        <div class="nav-item"><i class="fa-solid fa-book"></i> Your Library</div>
+    </div>
+    <div class="playlists">
+        <div class="nav-item"><i class="fa-solid fa-plus"></i> Create Playlist</div>
+        <div class="nav-item"><i class="fa-solid fa-heart"></i> Liked Songs</div>
+    </div>
+</div> 
+
+
+
+
+</div>
+
+
+ <script src="script1.js"></script>
+</body>
+</html>
